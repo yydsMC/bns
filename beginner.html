@@ -39,6 +39,18 @@
         alert('请在游戏中自行探索！多与其他玩家交流！');
     }
     </script>
+	<script type="text/javascript">
+    //<!CDATA[
+        var bodyBgs = [];
+        bodyBgs[0] = "images/bg1.jpg";
+        bodyBgs[1] = "images/bg2.jpg";
+        bodyBgs[2] = "images/bg3.jpg";
+        var randomBgIndex = Math.round( Math.random() * 2 );
+
+    //输出随机的背景图
+        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat 50% 0;background-size:cover}</style>');
+    //]]>
+    </script>
 <title>剑灵巅峰服</title>
 <link type="image/x-icon" rel="icon" href="images/favicon-hd.ico">
 <link type="image/x-icon" rel="shortcut icon" href="images/favicon-hd.ico">
