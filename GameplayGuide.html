@@ -9,6 +9,30 @@
       .vjs-fluid {
         padding-top: 56.25%
       }
+	  .colorfocus{
+            /*设置字体大小*/
+            font-size: 30px;
+            /*字体加粗*/
+            font-weight: bold;
+            /*设置字体颜色为透明色*/
+            color: transparent;
+            /*设置盒子的背景颜色*/
+            background-image: linear-gradient(45deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+            background-size: 300%;
+            /*通过background-clip属性按照文字轮廓裁剪*/
+            background-clip: text;
+            /*添加动画animation：动画名 动画持续时间 匀速 循环播放 */
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 300% 0;
+            }
+            100% {
+                background-position: -300% 0;
+            }
+        }
     </style>
 	<script>
     function showAlert() {
